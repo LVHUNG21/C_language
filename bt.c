@@ -9,7 +9,7 @@ void assign(char *arr1, char *arr2)
     }
 }
 
-void calculate(char* fibo_0, char* fibo_1, char* result)
+char* calculate(char* fibo_0, char* fibo_1, char* result)
 {
     int debt = 0;
     for (int i = 29; i >= 0; i--)
@@ -22,16 +22,12 @@ void calculate(char* fibo_0, char* fibo_1, char* result)
             result[i] = result[i] - 10;
         }
     }
+    return result;
 }
 
-char * fibonacci(int n)
+void fibonacci(int n,char * fibo_0,char *fibo_1,char * result)
 {
-    char result[30];
-    char fibo_0[30];
-    char fibo_1[30];
-    fibo_1[29] = 1;
-    fibo_0[29] = 1;
-    
+    printf("\n%d",n);
     if (n == 0)
     {
         result[29] = 0;
@@ -49,11 +45,18 @@ char * fibonacci(int n)
             assign(fibo_1, result);
         }
     }
+    // return result;
 }
 
 int main()
 {
-
+    
+    char result[32];
+    char fibo_0[30];
+    char fibo_1[30];
+    fibo_1[29] = 1;
+    fibo_0[29] = 1; 
+    char * arr;
     int number = 0;
     scanf("%d", &number);
 
@@ -61,22 +64,22 @@ int main()
     {
         scanf("%d", &number);
     }
+    fibonacci(number,fibo_0,fibo_1,result);
 
-    fibonacci(number, result, fibo_0, fibo_1);
-
-    int count = 0;
-    for (int j = 0; j < 30; j++)
+    
+    // int count = 0;
+    // for (int j = 0; j < 30; j++)
+    // {
+    //     if (arr[j] != 0)
+    //     {
+    //         count = j;
+    //         break;
+    //     }
+    // }
+ 
+    for (int i = 0; i < 30; i++)
     {
-        if (result[j] != 0)
-        {
-            count = j;
-            break;
-        }
-    }
-
-    for (int i = count; i < 30; i++)
-    {
-        printf("%d", result[i]);
+        printf("%d",result[i]);
     }
 
     return 0;
