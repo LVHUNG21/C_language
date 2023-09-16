@@ -1,0 +1,32 @@
+// no pt bac 2
+	// variable use stores value , khong thao tac truc tiep voi dia chi, 
+	// int :2 byte:8,16bit,4 byte:32,64bit ,CHAR:1 float:4, DOUBLE:8, VOID : 0,
+    AssX_Le_Van_Hung.zip
+    Ass1_.....
+    delete .exe
+     
+     // global variable, 
+
+    // static global  variable;
+    // statci local varibale 
+    // static function 
+
+    // dung dieu kien de dung vong for thay vi break       
+    // when call function , get location memory in stack       
+    // only declare at the leading of functione
+    // when the line code end line '\'
+    // 
+
+    /*
+    Array:
+    //dung stdint.h
+    // type int is 4byte but char is 1 byte  , after it ghi de len cac dia chi xung quanh 
+    // little endian, big endian 
+    // create variable temp
+    // dia chi dau tien, cua o nho dau tien cua phan tu dau tien
+    // %s need a address , and end at \0
+    // scanf only get data to space, use getline();gets();
+          
+
+    
+    */
